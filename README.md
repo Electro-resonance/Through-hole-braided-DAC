@@ -16,4 +16,4 @@ Additionally the author wanted to extend the DAC bit rate beyond 12bits. Fortuna
 
 Additionally the DAC has linearity issues as defined in the datasheet for values between 0V and 0.01V. To improve linearity, channel A is drived with 11 bits across the 1.024V to 3.072V range and channel B is driven with 5 bits across a smaller range centred about 2.048V.
 
-This repository provides the modified files for fixing the DAC timings, changing the SPI and display timing and also for generating the dual DAC output for use as 16 bit output. 
+This repository provides the modified files for fixing the DAC timings, changing the SPI and display timing and also for generating the dual DAC output for use as 16 bit output. It also includes the hex file for the modified Mutated-Mutables firmware.
