@@ -1,9 +1,13 @@
 # Throughhole_Braided_DAC
-Improvements to the DAC code for the Braids Through-hole – SoundForce module
+Suggested improvements to the DAC code for the Braids Through-hole – SoundForce module
 
+
+Acknowledgements:
 This repository was born after building the Braids Through-hole – SoundForce module which is a derrivative work of Mutable Instruments Braids by Emilie Gillet with original firmware: https://github.com/pichenettes/eurorack/tree/master/braids and also the with changes for the derivative firmware by Tim Churches: https://github.com/timchurches/Mutated-Mutables
 
-On completion of the Braids through hole it was noticed that the DAC output was very noisy. It sounded like it was dropping samples. The selection of the oscillator caused the noise to change character.
+
+Reason for Development:
+On completion of the Soundforce Braids through hole it was noticed that the DAC output was very noisy. It sounded like it was dropping samples. The selection of the oscillator caused the noise to change character. Adding extra capacitors to the power supply lines of the DAC, STM32 "bluepill" module and the display driver ICs did not remove the noise.
 
 Investigation revealed a few issues:
 1) The MCP4822 chipselect CS was been driven low to load each new sample, but this was taking place only within a few clock cycles of the STM32 and the period was too short causing some loads to be unsuccessful. The CS line has to be held low for 40ns before loading a new sample (tCHS) as shown in figure 1-1: https://www.mouser.co.uk/datasheet/2/268/21953a-8929.pdf
