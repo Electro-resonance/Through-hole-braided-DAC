@@ -6,7 +6,7 @@ This repository was born after building the Braids Through-hole – SoundForce m
 On completion of the Braids through hole it was noticed that the DAC output was very noisy. It sounded like it was dropping samples. The selection of the oscillator caused the noise to change character.
 
 Investigation revealed a few issues:
-1) The MCP4822 chipselect CS was been driven slow to load each new sample in a few clock cycles of the STM32 and this period was too short. The CS line has to be held low for 40ns before loading a new sample (tCHS) as shown in figure 1-1: https://www.mouser.co.uk/datasheet/2/268/21953a-8929.pdf
+1) The MCP4822 chipselect CS was been driven low to load each new sample, but this was taking place only within a few clock cycles of the STM32 and the period was too short causing some loads to be unsuccessful. The CS line has to be held low for 40ns before loading a new sample (tCHS) as shown in figure 1-1: https://www.mouser.co.uk/datasheet/2/268/21953a-8929.pdf
 Adding extra NOP instructions allows the timinig to be made more precise and allows a longer CS low time to be defined.
 2) The SPI lines were set to 50MHz, however at this speed the lines interfere with each other especially crossing the inline connections from the STM32 bluepill to the main board. Dropping to 10MHz greatly reduced the number of dropped samples. 
 3) The lines to the display were also set to 50MHz, however the display can operate with 2MHz. Selecting a slower output line adds extra capacitance and reduces the likelihood that the IO line will induce external interference across the board.
