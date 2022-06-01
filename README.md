@@ -19,8 +19,11 @@ Additionally the DAC has linearity issues as defined in the datasheet for values
 This repository provides the modified files for fixing the DAC timings, changing the SPI and display timing and also for generating the dual DAC output for use as 16 bit output. It also includes the hex file for the modified Mutated-Mutables firmware.
 
 To flash the firmware, the first time I needed to write the bootloader:
+
 git clone https://github.com/hadesbox/eurorack-with-binaries/braids_bootloader
+
 st-flash --flash=128k --format ihex write braids_bootloader.hex 
 
 The Mutated-Mutables firmware with the modifications from this repository can then be written to the module using: 
+
 st-flash --flash=128k --format ihex write mutated_dac_through_hole.hex
