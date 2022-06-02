@@ -1,5 +1,5 @@
 # Throughhole_Braided_DAC
-Suggested improvements to the DAC code for the Braids Through-hole – SoundForce module including a 16 bit mode using a small hardware modification.
+Suggested improvements to the DAC code for the Braids Through-hole – SoundForce Eurorack Modular Synth DIY modules including upgrade from 12 bit to 16 bit mode using a small hardware modification without changing the digital to analogue converter(DAC).
 
 
 Acknowledgements:
