@@ -58,3 +58,5 @@ https://sound-force.nl/?page_id=3179
 https://www.modwiggler.com/forum/viewtopic.php?p=3254958#p3254958
 
 https://lookmumnocomputer.discourse.group/t/braids-tht-in-kosmo-format/372/169
+
+https://www.youtube.com/watch?v=EpqNQiMcVl8   (Kristian Blåsol "DIY Throughhole MI Braids - Modular in a Week" YouTube video)
