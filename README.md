@@ -18,7 +18,7 @@ Adding extra NOP instructions allows the timinig to be made more precise and all
 
 16bits from a dual 12bit DAC !!
 
-The author wanted to extend the DAC bit rate beyond 12 bits resolution to closer match that of the original Braids module from Mutable Instruments. Fortunately the MCP4822 has two 12bit DAC channels. Using two DACs in parallel with differing size output resistors into a potential divider allows the chip to function up to 24bits. This technique is in fact described in the MCP4822 datasheet. The current firmware uses 16bit buffers which is adequate for the application. It was decided to aim so that the hardware would theoretically be able to achieve 20 bits possible accuracy. 
+The author wanted to extend the DAC bit rate beyond 12 bits resolution to closer match that of the original Braids module from Mutable Instruments. Fortunately the MCP4822 has two 12bit DAC channels. Using two DACs in parallel with differing size output resistors into a potential divider allows the chip to function up to 24bits. This technique is in fact described in the MCP4822 datasheet. The current firmware uses 16bit buffers which is adequate for the application. It was decided to aim so that the hardware would theoretically be able to achieve 20 bits possible accuracy. The internal accuracy of the DACs and external resistors is likely to limit what is achievable to around 15-16 bits. 
 
 Simple Extra Resistor Modification
 
