@@ -30,7 +30,7 @@ The DAC has a small linearity issue as defined in the datasheet for values betwe
 
 Expectation of the combined DAC resolution
 
-The upper limit of achievable resolution of the DAC will be limited by the input sample resolution, the system noise floor and the accuracy and tolerance of the internal DAC voltage dividers and the tolerance of the external resistors.
+The upper limit of achievable resolution of the DAC will be limited by the input sample resolution, the system noise floor, the accuracy/tolerance of the internal DAC voltage dividers and the tolerance of the two external resistors (39k and 1 Mohm).
 
 
 This repository provides the modified source files for fixing the DAC timings, changing the SPI and display timing and also for generating the dual DAC output for use as 16 bit output. It also includes the hex file for the modified Mutated-Mutables firmware.
