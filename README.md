@@ -26,7 +26,7 @@ The extended bit depth resolution modification is achieved in hardware using a 1
 
 ![image](https://user-images.githubusercontent.com/98977744/200071070-8bbc8ef9-47c3-4a5f-8a44-74db42f03b71.png)
 
-Extra soiftware improvement
+Extra software improvement
 
 The DAC has a small linearity issue as defined in the datasheet for values between 0V and 0.01V (i.e. close to GND). To improve linearity, channel A is driven with 11 bits across the range 1.024V to 3.072V and channel B is driven with 5 bits across a smaller range centred about 2.048V. The DAC output is AC coupled through capacitor C24, so running nearer to the 2.048V mid point makes no difference to the overall DC output levels. This software modification with the two channels being used avoids operating the two DAC channels near to the area where the DAC is known to be non-linear.
 
@@ -35,7 +35,7 @@ Expectation of the combined DAC resolution
 
 The upper limit of achievable resolution of the DAC will be limited by the input sample resolution, the system noise floor, the accuracy/tolerance of the internal DAC voltage dividers and the tolerance of the two external resistors (39k and 1 Mohm).
 
-The datasheet (https://www.mouser.co.uk/datasheet/2/268/21953a-8929.pdf) section 6.8 describes this technique of "Designing A Double-Precision DAC Using A Dual DAC" which is shown in Example 6-5 and suggested as "how to design a single-supply voltage output capable of up to 24-bit resolution from a dual 12-bit DAC. This design is simply a voltage divider with a buffered output."
+The datasheet (https://www.mouser.co.uk/datasheet/2/268/21953a-8929.pdf) section 6.8 describes this technique of "Designing A Double-Precision DAC Using A Dual DAC" which is shown in Example 6-5 o fthe same datasheet. The datasheet section is titled "How to design a single-supply voltage output capable of up to 24-bit resolution from a dual 12-bit DAC. This design is simply a voltage divider with a buffered output."
 
 
 This repository provides the modified source files for fixing the DAC timings, changing the SPI and display timing and also for generating the dual DAC output for use as 16 bit output. It also includes the hex file for the modified Mutated-Mutables firmware.
