@@ -69,18 +69,18 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMA
 
 # Useful Links and Related Forums:
 
-### Originator of through holes module
+###### Originator of through holes module
 https://sound-force.nl/?page_id=3179
 
-### Original Mutable Instruments Module
+###### Original Mutable Instruments Module
 https://mutable-instruments.net/modules/braids/
 https://mutable-instruments.net/modules/braids/open_source/
 
-### Modwiggler forum
+###### Modwiggler forum
 https://www.modwiggler.com/forum/viewtopic.php?p=3254958#p3254958
 
-### Look mum no computer kosmo format adaptation
+###### Look mum no computer kosmo format adaptation
 https://lookmumnocomputer.discourse.group/t/braids-tht-in-kosmo-format/372/169
 
-### Kristian Blåsol "DIY Throughhole MI Braids - Modular in a Week" YouTube video)
+###### Kristian Blåsol "DIY Throughhole MI Braids - Modular in a Week" YouTube video)
 https://www.youtube.com/watch?v=EpqNQiMcVl8   
