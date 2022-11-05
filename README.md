@@ -33,9 +33,9 @@ The DAC has a small linearity issue as defined in the datasheet for values betwe
 
 Expectation of the combined DAC resolution
 
-The upper limit of achievable resolution of the DAC will be limited by the input sample resolution, the system noise floor, the accuracy/tolerance of the internal DAC voltage dividers and the tolerance of the two external resistors (39k and 1 Mohm).
+The upper limit of achievable resolution of the DAC will be limited by the input sample resolution, the system noise floor, the accuracy/tolerance of the internal DAC voltage dividers and the tolerance of the two external resistors (39k and 10 Mohm).
 
-The datasheet (https://www.mouser.co.uk/datasheet/2/268/21953a-8929.pdf) section 6.8 describes this technique of "Designing A Double-Precision DAC Using A Dual DAC" which is shown in Example 6-5 o fthe same datasheet. The datasheet section is titled "How to design a single-supply voltage output capable of up to 24-bit resolution from a dual 12-bit DAC. This design is simply a voltage divider with a buffered output."
+The datasheet (https://www.mouser.co.uk/datasheet/2/268/21953a-8929.pdf) section 6.8 describes this technique of "Designing A Double-Precision DAC Using A Dual DAC" which is shown in Example 6-5 of the same datasheet. The datasheet section is titled "How to design a single-supply voltage output capable of up to 24-bit resolution from a dual 12-bit DAC." and states "This design is simply a voltage divider with a buffered output."
 
 
 This repository provides the modified source files for fixing the DAC timings, changing the SPI and display timing and also for generating the dual DAC output for use as 16 bit output. It also includes the hex file for the modified Mutated-Mutables firmware.
