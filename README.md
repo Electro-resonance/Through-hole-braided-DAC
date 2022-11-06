@@ -13,10 +13,10 @@ On completion of the Soundforce Braids through hole it was noticed that the DAC 
 1) The MCP4822 chipselect CS was been driven low to load each new sample, but this was taking place only within a few clock cycles of the STM32 serialising the data to the DAC. The settling period was too short causing some loads to be unsuccessful. The CS line has to be held low for 40ns before loading a new sample (tCHS) as shown in figure 1-1: https://www.mouser.co.uk/datasheet/2/268/21953a-8929.pdf
 Adding extra NOP instructions allows the timinig to be made more precise and allows a longer CS low time to be defined.
 2) The SPI lines were set to 50MHz, however at this speed the lines interfere with each other especially crossing the inline connections from the STM32 bluepill to the main board. Dropping to 10MHz greatly reduced the number of dropped samples. 
-3) The lines to the display were also set to 50MHz, however the display can operate with 2MHz. Selecting a slower output line adds extra capacitance and reduces the likelihood that the IO line will induce external interference across the board.
+3) The lines to the display were also set to 50MHz, however the display can operate with 2MHz. Selecting a slower output line adds extra capacitance to each IO line of the microcontroller and reduces the likelihood that the IO line will induce external interference across the board.
 
 
-## 16bits from a Dual 12bit DAC !!
+## 16 bits from a Dual 12 bit DAC !!
 
 The author wanted to extend the DAC bit rate beyond 12 bits resolution to closer match that of the original Braids module from Mutable Instruments. Fortunately the MCP4822 has two 12bit DAC channels. Using two DACs in parallel with differing size output resistors into a potential divider allows the chip to function up to 24bits. This technique is in fact described in the MCP4822 datasheet. The current firmware uses 16bit buffers which is adequate for the application. It was decided to aim so that the hardware would theoretically be able to achieve 20 bits possible accuracy. The internal accuracy of the DACs and external resistors is likely to limit what is achievable to around 15-16 bits. 
 
