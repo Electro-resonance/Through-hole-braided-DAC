@@ -82,5 +82,8 @@ https://www.modwiggler.com/forum/viewtopic.php?p=3254958#p3254958
 ###### Look mum no computer kosmo format adaptation
 https://lookmumnocomputer.discourse.group/t/braids-tht-in-kosmo-format/372/169
 
-###### Kristian Blåsol "DIY Throughhole MI Braids - Modular in a Week" YouTube video)
+###### Kristian Blåsol "DIY Throughhole MI Braids - Modular in a Week" (YouTube video)
 https://www.youtube.com/watch?v=EpqNQiMcVl8   
+
+###### MeeBlit "Eurorack DIY: Through-hole Braids Build and Demo" (YouTube video)
+https://www.youtube.com/watch?v=yU6jU54t530
